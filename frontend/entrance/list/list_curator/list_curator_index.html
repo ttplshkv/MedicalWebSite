@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/entrance/list/list_style.css">
+    <link rel="icon" href="http://localhost:8081/favicon.ico" type="image/png">
+    <script type="module" src="/frontend/entrance/list/list_script.js"></script>
+    <title>ADMINISTRATOR_CURATOR</title>
+</head>
+<body>
+<div class="container">
+    <div class="label">
+        <img src="/frontend/resourses/images/label/planeta.jpg"
+             alt="label" height="100">
+        <div class="admin_text">
+            <p>Администратор</p>
+            <p>Иванов Иван Иванович</p>
+        </div>
+    </div>
+    <div class="h1">
+        <h1>Кураторы</h1>
+    </div>
+    <div class="user-list-container">
+
+        <ul id="user-list"></ul>
+    </div>
+    <div class="create">
+        <button name="button" onclick="window.location.href='/frontend/entrance/admin/creation/curator/create_curator.html'">Создать пользователя</button>
+    </div>
+    <div id="user-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Информация о кураторе</h2>
+            <form id="userEditForm">
+                <div>
+                    <label for="edit-lastname">Фамилия:</label>
+                    <input type="text" id="edit-lastname" name="lastname">
+                </div>
+                <div>
+                    <label for="edit-name">Имя:</label>
+                    <input type="text" id="edit-name" name="name">
+                </div>
+                <div>
+                    <label for="edit-secondname">Отчество:</label>
+                    <input type="text" id="edit-secondname" name="secondname">
+                </div>
+                <div>
+                    <label for="edit-birthDate">Дата рождения:</label>
+                    <input type="date" id="edit-birthDate" name="birthDate">
+                </div>
+
+                <div>
+                    <label class="teacher-selection">Привязанные педагоги:</label>
+                    <button type="submit">Добавить</button>
+                    <ul id="teacher-list">
+                    </ul>
+                    <ul id="teacher-Ids-list">
+                    </ul>
+                </div>
+
+                <div>
+                    <label class="child-selection">Привязанные ученики:</label>
+                    <label for="child-dropdown"></label><select id="child-dropdown">
+                            <option value="">Выберите ученика</option>
+                        </select>
+                    <ul id="child-list">
+                    </ul>
+                </div>
+
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+
+        <div id="list-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Список пользователей</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/frontend/entrance/list/list_script.js"></script>
+
+<script type="module">
+    import { setRole } from '/frontend/entrance/list/list_script.js';
+    setRole("curator");
+</script>
+</body>
+</html>

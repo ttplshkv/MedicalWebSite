@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin_style.css">
+    <script src="admin_script.js"></script>
+    <title>ADMINISTRATOR</title>
+</head>
+<body>
+<div class="container">
+<div class="label">
+    <img src="/frontend/resourses/images/label/planeta.png"
+         alt="label" height="100">
+    <div class="admin_text">
+        <p>Администратор</p>
+        <p>Иванов Иван Иванович</p>
+    </div>
+</div>
+<div class="users">
+    <div class="supervisor">
+        <button name="button" onclick="showContent('supervisor')">Супервизор</button>
+    </div>
+    <div class="curator">
+        <button name="button" onclick="showContent('curator')">Куратор</button>
+    </div>
+    <div class="teacher">
+        <button name="button" onclick="showContent('teacher')">Преподаватель</button>
+    </div>
+    <div class="children">
+        <button name="button" onclick="showContent('children')">Ребенок</button>
+    </div>
+</div>
+</div>
+</body>
+</html>

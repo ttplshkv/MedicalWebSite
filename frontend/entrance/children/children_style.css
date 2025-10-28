@@ -1,0 +1,17 @@
+/*.container {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr; !* Один столбец *!*/
+/*    justify-items: center; !* Выравнивание по центру *!*/
+/*    gap: 10px; !* Расстояние между элементами *!*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*}*/
+
+.h1 {
+                display: grid;
+                grid-template-columns: 1fr; /* Один столбец */
+                justify-items: center; /* Выравнивание по центру */
+                gap: 10px; /* Расстояние между элементами */
+                align-items: center;
+                text-align: center;
+}

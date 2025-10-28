@@ -1,0 +1,70 @@
+/* Контейнер для формы */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левой стороне */
+    width: 100%;
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+    gap: 15px; /* Расстояние между полями */
+}
+
+/* Выравнивание для каждого поля ввода */
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ширина поля ввода */
+}
+
+/* Стили для меток */
+form label {
+    margin-bottom: 10px; /* Расстояние между меткой и полем ввода */
+}
+
+/* Стили для полей ввода */
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Поля будут занимать всю доступную ширину контейнера */
+    margin-bottom: 20px; /* Расстояние между полем ввода и следующим элементом */
+    box-sizing: border-box; /* Учитываем отступы и границы внутри ширины */
+}
+
+/* Стили для кнопки */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #28a745, #007bff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+}
+
+/* Заголовок и текст админа */
+.label {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.admin_text {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.h1 {
+    font-weight: bold;
+    color: #808080;
+    font-size: 15px;
+}
+
+.h2 {
+    font-size: 10px;
+}
